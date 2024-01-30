@@ -1,3 +1,10 @@
 {
-  "extends": "next/core-web-vitals"
+  "root": true,
+  "extends": [
+    "next/core-web-vitals",
+    "airbnb",
+    "prettier",
+    "plugin:prettier/recommended",
+    "plugin:react-hooks/recommended"
+  ]
 }
