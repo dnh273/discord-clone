@@ -21,7 +21,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { FiledUpload } from "@/components/file-upload";
+import { FileUpload } from "@/components/file-upload";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import { useModal } from "@/hooks/use-modal-store";
@@ -91,7 +91,7 @@ export const CreateServerModal = () => {
                     return (
                       <FormItem>
                         <FormControl>
-                          <FiledUpload
+                          <FileUpload
                             endpoint="serverImage"
                             value={field.value}
                             onChange={field.onChange}
